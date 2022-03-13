@@ -2,6 +2,7 @@ import React from 'react'
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col'
+import { Link } from "react-router-dom";
 
 function MovieCard(props){
     const movie= props.movie;
@@ -18,7 +19,9 @@ function MovieCard(props){
                 <br />
                 Rating: {movie.rating}
             </Card.Text>
-            <Button href = {movie.video} variant="primary">WATCH NOW</Button>
+            <Link to={`movie/${movie.id}`}>
+              <Button variant="primary">WATCH NOW</Button>
+            </Link>
             </Card.Body>
         </Card>
     </Col>
