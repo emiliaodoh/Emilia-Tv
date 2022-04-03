@@ -1,5 +1,5 @@
 import Navbar from 'react-bootstrap/Navbar';
-import Container from 'react-bootstrap/container';
+import Container from 'react-bootstrap/Container';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import FormControl from 'react-bootstrap/FormControl';
 import Form from 'react-bootstrap/Form';
