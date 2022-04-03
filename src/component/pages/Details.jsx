@@ -11,16 +11,16 @@ export default function Details() {
 
     function getMovie() {
         const {id} = params;
-        let movie = movies.find(item => item.id == id);
+        let movie = movies.find(item => item.id === id);
         setMovie(movie);
     }
     
     useEffect(() => {
         getMovie();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     return (
-      
         <Container>
            <button onClick={() => navigate(-1)}>go back</button>
             <Row>
